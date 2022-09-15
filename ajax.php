@@ -53,7 +53,10 @@
                 url: "data.php",
                 type: "GET",
                 dataType: "json",
+               
                 success: function(data) {
+
+                   // var data1 = JSON.parse(data);
                     $("#data").html('');
                     $("#data1").html('');
                     $("#demo").html(data.car1);
@@ -69,7 +72,7 @@
             console.log("click");
         });
         
-        
+
         $(document).ready(function() {
             $("#text").click(function() {
                 $.ajax({
